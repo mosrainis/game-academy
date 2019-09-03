@@ -19,6 +19,8 @@ import { CollectionComponent } from './components/main-components/collection/col
 import { SearchBoxComponent } from './components/child-components/search-box/search-box.component';
 import { LoginBoxComponent } from './components/child-components/login-box/login-box.component';
 import { HomeBannerComponent } from './components/child-components/home-banner/home-banner.component';
+import { SliderComponent } from './components/child-components/slider/slider.component';
+import { SingleItemComponent } from './components/child-components/single-item/single-item.component';
 
 @NgModule({
   declarations: [
@@ -36,7 +38,9 @@ import { HomeBannerComponent } from './components/child-components/home-banner/h
     CollectionComponent,
     SearchBoxComponent,
     LoginBoxComponent,
-    HomeBannerComponent
+    HomeBannerComponent,
+    SliderComponent,
+    SingleItemComponent
   ],
   imports: [
     BrowserModule,

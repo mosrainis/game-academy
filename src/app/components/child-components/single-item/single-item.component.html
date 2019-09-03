@@ -1,0 +1,13 @@
+<div class="content-wrapper">
+    <div class="flex-item flex2">
+        <img src="{{content.avatar.hdpi}}" alt="content image" class="content-img">
+    </div>
+    <div class="flex-item flex3">
+        <h4 class="content-title">
+            {{content.name}}
+        </h4>
+        <p class="content-des" *ngIf="content.short_description">
+            {{content.short_description}}
+        </p>
+    </div>
+</div>

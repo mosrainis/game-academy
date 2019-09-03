@@ -11,8 +11,8 @@ export interface category {
     parent:     number | null;
     childs:     category[];
 }
-
-// Home page content :
+// -------------------------------------------------
+//---------------- Home page content :
 
 export interface homePage {
     id:                number;

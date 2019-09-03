@@ -9,4 +9,16 @@
             </a>
         </ul>
     </div>
+    <div class="home-content">
+        <ul>
+            <ng-container *ngFor="let item of homeItems">
+                <div *ngIf="hasOnlyOneChild(item); else slider">
+                    <app-single-item [content]="item.products[0]"></app-single-item>
+                </div>
+                <ng-template #slider>
+                    <app-slider [contentList]="item"></app-slider>
+                </ng-template>
+            </ng-container>
+        </ul>
+    </div>
 </div>
