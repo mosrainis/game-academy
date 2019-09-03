@@ -1,0 +1,52 @@
+.banner-co {
+    position: relative;
+    background: url("../../../../assets/moss-iRF0psyhz10-unsplash.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center bottom;
+    width: 100%;
+    height: 600px;
+
+    .banner-info {
+        position: absolute;
+        top: 60%;
+        left: 70%;
+        transform: translate(-60%, -70%);
+        color: #fff;
+
+        .banner-des {
+            width: 380px;
+            text-align: justify;
+        }
+    }
+}
+
+.feature-co {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    height: 100px;
+    background-image: linear-gradient(to left, rgba(75, 18, 72, 0.8), rgba(240, 194, 123, 0.6));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .feature-item {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        color: #fff;
+        margin: 0 75px;
+
+        .feature-icon {
+            width: 45px;
+            height: 45px;
+            margin-left: 25px;
+        }
+
+        .feature-title,
+        .feature-des {
+            margin: 8px;
+        }
+    }
+}

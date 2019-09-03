@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="20px" height="20px" viewBox="0 0 20 20" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 52.5 (67469) - http://www.bohemiancoding.com/sketch -->
+    <title>icon_instagram</title>
+    <desc>Created with Sketch.</desc>
+    <defs>
+        <linearGradient x1="8.78314544%" y1="-3.50838151%" x2="140.57352%" y2="124.804236%" id="linearGradient-1">
+            <stop stop-color="#EFF7FC" offset="0%"></stop>
+            <stop stop-color="#FFFFFF" offset="100%"></stop>
+        </linearGradient>
+    </defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="1" transform="translate(-284.000000, -1608.000000)">
+            <g id="icon_instagram" transform="translate(284.000000, 1608.000000)">
+                <path d="M0,4.99525338 L0,15.0047466 C0,17.763962 2.23645112,20 4.99525338,20 L15.0047466,20 C17.763962,20 20,17.7635489 20,15.0047466 L20,4.99525338 C20,2.23603796 17.7635489,0 15.0047466,0 L4.99525338,0 C2.23603796,0 0,2.23645112 0,4.99525338 Z" id="Rectangle" fill="#2CA5E0"></path>
+                <g id="Telegram" transform="translate(4.000000, 6.000000)">
+                    <path d="M4.16666667,8.58333333 C3.84266667,8.58333333 3.89775,8.461 3.786,8.15258333 L2.83333333,5.01716667 L10.1666667,0.666666667 L4.16666667,8.58333333 Z" id="Shape" fill="#C8DAEA"></path>
+                    <path d="M4.16666667,8.58333333 C4.41666667,8.58333333 4.52716667,8.469 4.66666667,8.33333333 L6,7.03683333 L4.33683333,6.03391667 L4.16666667,8.58333333 Z" id="Shape" fill="#A9C9DD"></path>
+                    <path d="M4.33666667,6.03416667 L8.36666667,9.01158333 C8.82658333,9.26533333 9.15841667,9.13391667 9.273,8.58466667 L10.9134167,0.854416667 C11.0813333,0.181 10.65675,-0.124333333 10.2168333,0.0753333333 L0.584333333,3.78958333 C-0.0731666667,4.05333333 -0.0693333333,4.42016667 0.464416667,4.58358333 L2.93633333,5.35516667 L8.65908333,1.74475 C8.92925,1.58091667 9.17725,1.669 8.97375,1.84958333 L4.33666667,6.03416667 Z" id="Shape" fill="url(#linearGradient-1)"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

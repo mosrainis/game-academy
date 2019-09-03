@@ -1,1 +1,12 @@
-<p>home works!</p>
+<div class="home-wrapper">
+    <app-home-banner></app-home-banner>
+    <div id="home-category" class="row">
+        <ul class="cat-list">
+            <a *ngFor="let item of homeCategory" class="p-link link-item" [routerLink]="['']" >
+                <li>
+                    {{item.title}}
+                </li>
+            </a>
+        </ul>
+    </div>
+</div>

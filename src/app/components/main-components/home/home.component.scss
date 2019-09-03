@@ -1,0 +1,21 @@
+.home-wrapper {
+    width: 100%;
+}
+
+.row {
+    width: 100%;
+    margin: auto;
+
+    .cat-list {
+        display: flex;
+        justify-content: center;
+
+        .link-item {
+            padding: 25px;
+            border-bottom: 3px solid rgb(194, 194, 194);
+        } .link-item:hover {
+            border-color: rgba(55, 179, 74, 1);
+            color: rgba(55, 179, 74, 1);
+        }
+    }
+}

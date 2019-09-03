@@ -18,6 +18,7 @@ import { SingleProductComponent } from './components/main-components/single-prod
 import { CollectionComponent } from './components/main-components/collection/collection.component';
 import { SearchBoxComponent } from './components/child-components/search-box/search-box.component';
 import { LoginBoxComponent } from './components/child-components/login-box/login-box.component';
+import { HomeBannerComponent } from './components/child-components/home-banner/home-banner.component';
 
 @NgModule({
   declarations: [
@@ -34,7 +35,8 @@ import { LoginBoxComponent } from './components/child-components/login-box/login
     SingleProductComponent,
     CollectionComponent,
     SearchBoxComponent,
-    LoginBoxComponent
+    LoginBoxComponent,
+    HomeBannerComponent
   ],
   imports: [
     BrowserModule,

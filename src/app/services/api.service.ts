@@ -3,7 +3,7 @@ import { HttpClient } from '@angular/common/http';
 import { step1login, step2login } from "../models/user-login.model";
 import { environment } from "../../environments/environment";
 import { Observable } from 'rxjs';
-import { category } from '../models/content.model';
+import { category, homePage } from '../models/content.model';
 
 @Injectable({
   providedIn: 'root'
@@ -29,8 +29,8 @@ export class ApiService {
     return this.http.get(`${environment.baseUrl}/profile`)
   }
 
-  getHomeItems() {
-    return this.http.get(`${environment.baseUrl}/store/18`)
+  getHomeItems(): Observable<homePage> {
+    return this.http.get<homePage>(`${environment.baseUrl}/store/18`)
   }
 
   getParentItems(parentId: number) {

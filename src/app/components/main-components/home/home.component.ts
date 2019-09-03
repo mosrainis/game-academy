@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
 import { ApiService } from 'src/app/services/api.service';
+import { Category } from 'src/app/models/content.model';
 
 
 @Component({
@@ -8,6 +9,8 @@ import { ApiService } from 'src/app/services/api.service';
   styleUrls: ['./home.component.scss']
 })
 export class HomeComponent implements OnInit {
+
+  homeCategory: Category[]
 
   constructor(
     private api: ApiService
@@ -20,6 +23,7 @@ export class HomeComponent implements OnInit {
   getData(){
     this.api.getHomeItems().subscribe(result=>{
       console.log(result);
+      this.homeCategory = result["parent_categories"]
     },
     error => {
       console.error(error);
