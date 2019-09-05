@@ -13,10 +13,7 @@
         </div>
         <div class="user-co">
             <div class="login-co">
-                <button class="white-button p-btn">ورود</button>
-            </div>
-            <div class="register-co">
-                <button class="green-button p-btn">ثبت‌نام</button>
+                <button class="login-button p-btn" (click)="toggleLoginModal()" #loginButton >ورود و ثبت‌نام</button>
             </div>
         </div>
     </div>
@@ -37,5 +34,8 @@
                 </div>
             </li>
         </ul>
+    </div>
+    <div class="login-box" *ngIf="displayLoginModal" #loginWrapper>
+        <app-login-box [displayLoginModal]="displayLoginModal"></app-login-box>
     </div>
 </header>

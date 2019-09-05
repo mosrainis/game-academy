@@ -1,10 +1,11 @@
+============================================
 <div class="content-wrapper">
-    <div class="slider-header">
-        <h3 class="slider-title">{{contentList.title}}</h3>
-        <a [routerLink]="['']">مشاهده همه</a>
-    </div>
-    <div class="slider-body">
-        <div id="back-btn" class="slider-btn backbtn">B</div>
-        <div id="next-btn" class="slider-btn nextbtn">N</div>
-    </div>
+    <owl-carousel-o [options]="customOptions">
+        <ng-container *ngFor="let item of contentList.products">
+            <ng-template carouselSlide [id]="item.id">
+                <img class="slide-image" src="https://api.vasapi.click/{{item.feature_avatar.mdpi}}" [alt]="item.name">
+            </ng-template>
+        </ng-container>
+    </owl-carousel-o>
 </div>
+============================================

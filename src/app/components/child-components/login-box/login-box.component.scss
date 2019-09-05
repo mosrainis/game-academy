@@ -1,0 +1,44 @@
+.box {
+    background: #fff;
+    border-radius: 8px;
+    padding: 22px;
+   
+    .login-form {
+        width: 400px;
+        text-align: center;
+
+        .form-input {
+            padding: 12px;
+            -webkit-box-sizing: border-box;
+            -moz-box-sizing: border-box;
+            box-sizing: border-box;
+            margin: 20px 0px;
+        }
+
+        .submit-input {
+            width: 100%;
+            background: rgba(55, 179, 74, 1);
+            color: #fff;
+            padding: 12px;
+            font-size: 18px;
+            border: 2px solid rgba(55, 179, 74, 1);
+            cursor: pointer;
+        }
+
+        .submit-input:hover {
+            background: #fff;
+            color: rgba(55, 179, 74, 1);
+        }
+    }
+}
+
+.dialog-header {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-bottom: 22px;
+
+    .dialog-title {
+        margin: 0;
+    }
+}

@@ -15,18 +15,31 @@
         }
 
         .user-co {
-            display: flex;
-            flex-direction: row;
             align-items: center;
+
+            .login-button {
+                background: rgba(55, 179, 74, 1);
+                color: #fff;
+                width: 120px;
+            }
         }
 
+    }
+
+    .login-box {
+        position: absolute;
+        top: 300px;
+        left: 40%;
+        z-index: 999;
     }
 }
 
 .desk-cat {
     position: absolute;
+    z-index: 999;
     top: 92px;
     right: 25%;
+    background: #fff;
     .cat-list {
         list-style-type: none;
         margin: 0;
@@ -38,6 +51,7 @@
             border-right: 1px solid rgb(231, 231, 231);
 
             .subcat-dropdown {
+                background: #fff;
                 display: none;
                 position: absolute;
                 top: 0;

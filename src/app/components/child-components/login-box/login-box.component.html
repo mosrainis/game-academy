@@ -1,6 +1,18 @@
-<div id="login-dialog" class="box">
-
-</div>
-<div id="verify-dialog" class="box">
+<div class="login-wrapper">
+    <div id="login-dialog" class="box" *ngIf="!mobileReceived; else verifyDialog">
+        <div class="dialog-header">
+            <h2 class="dialog-title">ورود و ثبت‌نام</h2>
+            <div class="google-login">ورود با گوگل</div>
+        </div>
+        <form #login = "ngForm" (ngSubmit)="step1login(login.value)" class="login-form">
+            <input class="p-input form-input" type="text" name="mobile" placeholder="شماره تلفن همراه" ngModel>
+            <input class="submit-input" type="submit" value="دریافت کد تایید">
+        </form>
+    </div>
     
+    <ng-template #verifyDialog>
+        <div id="verify-dialog" class="box">
+            User has entered the mobile number!
+        </div>
+    </ng-template>
 </div>
