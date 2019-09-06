@@ -3,11 +3,22 @@
 
     .search-field {
         width: 450px;
+        padding: 15px;
+        background: rgba(238, 238, 238, 1);
+        border: none;
     }
 
     .search-icon {
         position: absolute;
-        top: 5px;
-        left: 5px;
+        top: 10px;
+        left: 15px;
+        z-index: 55;
+        
+        img {
+            width: 30px;
+            transform: scaleX(-1);
+            background: rgba(238, 238, 238, 1);
+            padding-left: 15px;
+        }
     }
 }

@@ -2,7 +2,17 @@
     <owl-carousel-o [options]="customOptions">
         <ng-container *ngFor="let item of contentList.products">
             <ng-template carouselSlide [id]="item.id">
-                <img class="slide-image" src="https://api.vasapi.click/{{item.feature_avatar.mdpi}}" [alt]="item.name">
+                <div class="slide-content">
+                    <div class="image-co">
+                        <img class="slide-image" src="https://api.vasapi.click/{{item.feature_avatar.mdpi}}" [alt]="item.name">
+                    </div>
+                    <div class="body-co">
+                        <h4 class="body-title">{{item.name}}</h4>
+                        <p class="producer">{{item.producer_name}}</p>
+                        <p class="rank-co">امتیاز : {{item.rank}}</p>
+                        <p class="price">قیمت : {{item.price}} ریال</p>
+                    </div>
+                </div>
             </ng-template>
         </ng-container>
     </owl-carousel-o>

@@ -1,4 +1,4 @@
-<div class="login-wrapper">
+<div [@dialog] class="login-wrapper" *ngIf="displayLoginModal">
     <div id="login-dialog" class="box" *ngIf="!mobileReceived; else verifyDialog">
         <div class="dialog-header">
             <h2 class="dialog-title">ورود و ثبت‌نام</h2>
@@ -16,7 +16,7 @@
             <div class="dialog-header">
                 <h2 class="dialog-title">ورود کد تایید</h2>
             </div>
-            <form [formGroup]="verifyForm" (ngSubmit)="step2login()" class="login-form">
+            <form [formGroup]="verifyForm" (ngSubmit)="step2Login()" class="login-form">
                 <input formControlName="verifycode" class="p-input form-input" type="text" placeholder="کد تاییدیه">
                 <input formControlName="nickname" class="p-input form-input" type="text" placeholder="نام نمایشی شما">
                 <input class="submit-input" type="submit" value="ورود به پرگار">

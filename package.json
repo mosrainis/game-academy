@@ -19,6 +19,8 @@
     "@angular/platform-browser": "~8.1.2",
     "@angular/platform-browser-dynamic": "~8.1.2",
     "@angular/router": "~8.1.2",
+    "angular-star-rating": "^4.0.0-beta.3",
+    "css-star-rating": "^1.2.4",
     "ngx-owl-carousel-o": "^2.0.1",
     "rxjs": "~6.4.0",
     "tslib": "^1.9.0",

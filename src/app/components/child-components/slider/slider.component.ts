@@ -13,7 +13,8 @@ export class SliderComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: false,
-    margin: 10,
+    margin: 15,
+    stagePadding: 2,
     rtl: true,
     rewind: false,
     mouseDrag: true,

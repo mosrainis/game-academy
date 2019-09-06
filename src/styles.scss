@@ -6,7 +6,10 @@ body {
     direction: rtl;
     padding: 0;
     margin: 0;
+    font-family: 'A Iranian Sans';
+    background: whitesmoke;
 }
+
 
 body.modal-open {
     position: relative;
@@ -24,6 +27,7 @@ body.modal-open:after {
     margin: auto;
     background: rgba(0, 0, 0, 0.431);
     z-index: 100;
+    transition: all 250ms;
 }
 
 ul {
@@ -93,6 +97,10 @@ ul {
         font-size: 25px !important;
         font-weight: bold;
         z-index: 50;
+    }
+
+    div.owl-nav > div:hover {
+        color: rgb(42, 141, 57) !important;
     }
     
     div.owl-nav > div.disabled {
