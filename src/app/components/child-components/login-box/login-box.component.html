@@ -4,15 +4,23 @@
             <h2 class="dialog-title">ورود و ثبت‌نام</h2>
             <div class="google-login">ورود با گوگل</div>
         </div>
-        <form #login = "ngForm" (ngSubmit)="step1login(login.value)" class="login-form">
-            <input class="p-input form-input" type="text" name="mobile" placeholder="شماره تلفن همراه" ngModel>
+        <form [formGroup]="loginForm" (ngSubmit)="step1Login()" class="login-form">
+            <input formControlName="mobile" class="p-input form-input" type="text" placeholder="شماره تلفن همراه">
             <input class="submit-input" type="submit" value="دریافت کد تایید">
         </form>
+        
     </div>
     
     <ng-template #verifyDialog>
         <div id="verify-dialog" class="box">
-            User has entered the mobile number!
+            <div class="dialog-header">
+                <h2 class="dialog-title">ورود کد تایید</h2>
+            </div>
+            <form [formGroup]="verifyForm" (ngSubmit)="step2login()" class="login-form">
+                <input formControlName="verifycode" class="p-input form-input" type="text" placeholder="کد تاییدیه">
+                <input formControlName="nickname" class="p-input form-input" type="text" placeholder="نام نمایشی شما">
+                <input class="submit-input" type="submit" value="ورود به پرگار">
+            </form>
         </div>
     </ng-template>
 </div>

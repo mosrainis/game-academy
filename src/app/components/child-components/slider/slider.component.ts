@@ -13,14 +13,15 @@ export class SliderComponent implements OnInit {
 
   customOptions: OwlOptions = {
     loop: false,
+    margin: 10,
     rtl: true,
     rewind: false,
     mouseDrag: true,
     touchDrag: false,
-    pullDrag: false,
+    pullDrag: true,
     dots: false,
     navSpeed: 700,
-    navText: ['', ''],
+    navText: ['<', '>'],
     responsive: {
       0: {
         items: 1

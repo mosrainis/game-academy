@@ -6,14 +6,14 @@
         </div>
         <app-search-box></app-search-box>
         <div class="link-co">
-            <a [routerLink]="" class="p-link" (click)="toggleCategory()">در پرگار درس بدهید</a>
+            <a [routerLink]="" class="p-link">در پرگار درس بدهید</a>
         </div>
         <div class="premium-co">
             <button class="route-button">کاربر اشتراکی شوید</button>
         </div>
         <div class="user-co">
             <div class="login-co">
-                <button class="login-button p-btn" (click)="toggleLoginModal()" #loginButton >ورود و ثبت‌نام</button>
+                <button class="login-button p-btn" #loginBtn >ورود و ثبت‌نام</button>
             </div>
         </div>
     </div>
@@ -35,7 +35,9 @@
             </li>
         </ul>
     </div>
-    <div class="login-box" *ngIf="displayLoginModal" #loginWrapper>
-        <app-login-box [displayLoginModal]="displayLoginModal"></app-login-box>
+    <div #loginModal>
+        <ng-container *ngIf="displayLoginModal">
+            <app-login-box [displayLoginModal]="displayLoginModal"></app-login-box>
+        </ng-container>
     </div>
 </header>

@@ -67,3 +67,35 @@ ul {
     cursor: pointer;
 }
 
+.owl-carousel {
+    position: relative;
+
+    .owl-prev {
+        position: absolute;
+        top: 35%;
+        right: -30px;
+    }
+
+    .owl-next {
+        position: absolute;
+        top: 35%;
+        left: -30px;
+    }
+
+    div.owl-nav > div {
+        width: 35px;
+        height: 35px;
+        line-height: 35px;
+        border-radius: 50% !important;
+        color: rgba(55, 179, 74, 1) !important;
+        background: #fff !important;
+        border: 1px solid rgb(189, 189, 189);
+        font-size: 25px !important;
+        font-weight: bold;
+        z-index: 50;
+    }
+    
+    div.owl-nav > div.disabled {
+        display: none !important;
+    }
+}

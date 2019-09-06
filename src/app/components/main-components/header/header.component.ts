@@ -11,28 +11,17 @@ export class HeaderComponent implements OnInit {
 
   desktopCategory: boolean = false
   websiteCategory: category
-  displayLoginModal: boolean = false
+  displayLoginModal: boolean //Ref to the login-box Component
 
-  @ViewChild('categoryBtn', {static: false}) categoryBtn: ElementRef
-  @ViewChild('loginWrapper', {static: false}) loginModal: ElementRef
-  @ViewChild('loginButton', {static: false}) loginButton: ElementRef
+  @ViewChild('categoryBtn', {static: false}) categoryButton: ElementRef
+  @ViewChild('loginBtn', {static: false}) loginButton: ElementRef
+  @ViewChild('loginModal', {static: false}) loginModal: ElementRef
 
   constructor(
     private api: ApiService,
     private renderer: Renderer2,
   ) {
-    this.renderer.listen('window', 'click', (e:Event)=> {
-      if(e.target !== this.categoryBtn.nativeElement){
-        this.desktopCategory = false;
-      }
-    })
-
-    this.renderer.listen('window', 'click', (e:Event)=> {
-      if(e.target !== this.loginModal.nativeElement && e.target !== this.loginButton.nativeElement){
-        this.displayLoginModal = false;
-        console.log(this.displayLoginModal);
-      }
-    })
+    this.modalEvents()
   }
 
   ngOnInit() {
@@ -40,7 +29,7 @@ export class HeaderComponent implements OnInit {
   }
 
   toggleCategory() {
-    this.desktopCategory = !this.desktopCategory;
+    this.desktopCategory = !this.desktopCategory
   }
 
   getCategory() {
@@ -52,8 +41,22 @@ export class HeaderComponent implements OnInit {
     })
   }
 
-  toggleLoginModal() {
-    this.displayLoginModal = !this.displayLoginModal
-  }
+  modalEvents() {
 
+    //Displays and hides Desktop Category
+    this.renderer.listen('window', 'click', (e:Event)=> {
+      if(e.target !== this.categoryButton.nativeElement){
+        this.desktopCategory = false;
+      }
+    })
+
+    //Displays and hides login window
+    this.renderer.listen('window', 'click', (e:Event)=> {
+      if(this.loginModal.nativeElement.contains(event.target) || this.loginButton.nativeElement.contains(event.target)){
+        this.displayLoginModal = true
+      } else {
+        this.displayLoginModal = false
+      }
+    })
+  }
 }
